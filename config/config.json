@@ -1,0 +1,36 @@
+{
+  "development": {
+    "username": "root",
+    "password": "123456",
+    "database": "express_next_development",
+    "host": "192.168.56.101",
+    "dialect": "mysql",
+    "define": {
+      "freezeTableName": true,
+      "timestamps": true,
+      "createdAt": "created_at",
+      "updatedAt": "updated_at",
+      "deletedAt": "deleted_at"
+    },
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": "123456",
+    "database": "express_next_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "123456",
+    "database": "express_next_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
